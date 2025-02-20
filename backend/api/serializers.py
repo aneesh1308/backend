@@ -98,7 +98,7 @@ class ResumeSerializer(serializers.ModelSerializer):
 
         for gallery_item in sliderGallery_data:
             SliderGallery.objects.create(resume=resume, **gallery_item)
-
+      
         return resume
 
     def update(self, instance, validated_data):
