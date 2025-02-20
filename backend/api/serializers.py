@@ -105,7 +105,7 @@ class ResumeSerializer(serializers.ModelSerializer):
         # Update nested data
         experiences_data = validated_data.pop('experiences', [])
         certifications_data = validated_data.pop('certifications', [])
-        education_data = validated_data.pop('education', [])
+        education_data = validated_data.pop('education', [])    
         tech_skills_data = validated_data.pop('tech_skills', [])
         soft_skills_data = validated_data.pop('soft_skills', [])
         hobbies_data = validated_data.pop('hobbies', [])
